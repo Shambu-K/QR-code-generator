@@ -14,7 +14,7 @@ if(choice == "1"):
 elif(choice == "2"):
     det = cv2.QRCodeDetector()
     val, points, straight_qrcode = det.detectAndDecode(cv2.imread("QR-input.jpg"))
-    print("Opening URL")
+    print("Opening URL...")
     webbrowser.open(val)
 else:
     print("ERROR...invalid option chosen")
